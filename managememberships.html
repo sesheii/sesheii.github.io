@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управління підписками</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Власні стилі тут */
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Управління</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Користувач</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Підписки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">check-in check-out</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Зареєструвати користувача</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Всі користувачі</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Управління підписками</h1>
+        
+        <form method="post" class="mb-4">
+            <div class="form-group">
+                <label for="name">Назва:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Введіть назву підписки">
+            </div>
+            <div class="form-group">
+                <label for="description">Опис:</label>
+                <textarea class="form-control" id="description" name="description" rows="3" placeholder="Введіть опис підписки"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="duration">Тривалість:</label>
+                <input type="number" class="form-control" id="duration" name="duration" placeholder="Тривалість підписки в днях">
+            </div>
+            <div class="form-group">
+                <label for="price">Ціна:</label>
+                <input type="number" class="form-control" id="price" name="price" placeholder="Ціна підписки">
+            </div>
+            <div class="form-group">
+                <label for="start_time">Початковий час:</label>
+                <input type="time" class="form-control" id="start_time" name="start_time">
+            </div>
+            <div class="form-group">
+                <label for="end_time">Кінцевий час:</label>
+                <input type="time" class="form-control" id="end_time" name="end_time">
+            </div>
+            <button type="submit" class="btn btn-primary">Створити підписку</button>
+        </form>
+
+        <h2 class="mb-3">Доступні підписки</h2>
+        <div class="list-group">
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="mb-1">Базова підписка</h5>
+                    <p>Базова підписка забезпечує доступ до базового функціоналу.</p>
+                    <small>Тривалість: 30 днів, Ціна: 100 грн.</small>
+                    <small>Час: 08:00 - 20:00</small>
+                </div>
+                <button type="submit" class="btn btn-danger btn-sm">Видалити</button>
+            </div>
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="mb-1">Розширена підписка</h5>
+                    <p>Розширена підписка забезпечує доступ до розширеного функціоналу.</p>
+                    <small>Тривалість: 60 днів, Ціна: 200 грн.</small>
+                    <small>Час: 08:00 - 22:00</small>
+                </div>
+                <button type="submit" class="btn btn-danger btn-sm">Видалити</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
