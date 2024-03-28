@@ -1,0 +1,81 @@
+body {
+    height: 100vh; /* Set body height to viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #c5dfef; /* Light gray background color */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Occupy full viewport height */
+}
+
+.login-container {
+    width: 350px;
+    padding: 30px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.login-text {
+    font-size: 28px; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add some bottom margin */
+}
+
+.thin-line {
+    height: 1px;
+    background-color: #ccc; /* Light gray line color */
+    margin-top: 20px; /* Adjust margin */
+    margin-bottom: 30px; /* Adjust margin */
+}
+
+.form-input {
+    width: 100%; /* Full width input */
+    height: 40px; /* Increase input height */
+    border: none; /* Remove border */
+    border-bottom: 1px solid #ccc; /* Add bottom border */
+    padding: 5px; /* Add padding */
+    margin-bottom: 20px; /* Adjust margin */
+    font-size: 16px;
+}
+
+.form-input::placeholder {
+    color: #999;
+}
+
+.button {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size for the button text */
+    border: none; /* No border */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 2px 2px 4px rgba(0, 123, 255, 0.3); /* Soft shadow */
+    cursor: pointer; /* Cursor style */
+    display: block; /* Make button a block element */
+    margin-left: auto; /* Center button horizontally */
+    margin-right: auto; /* Center button horizontally */
+}
+
+/* Hover effect */
+.button:hover {
+    opacity: 0.8; /* Reduce opacity on hover for a subtle effect */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center a {
+    color: #666; /* Gray text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.text-center a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
