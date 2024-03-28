@@ -1,7 +1,15 @@
+html {
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  height: 100vh; /* Set body height to viewport height */
-  margin: 0; /* Remove default margin */
-  background-color: #c5dfef; /* Light gray background color */
+  background-image: linear-gradient(to right, #ff7e5f, #677d97);
+  background-color: #ff7e5f;
+  height: 100%;
+  margin: 0;
+  background-color: #c5dfef;
   font-family: Arial, Helvetica, sans-serif;
 }
 
