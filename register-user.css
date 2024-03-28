@@ -1,43 +1,47 @@
+/* Resetting default margin and padding */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
+/* Setting background and font */
 body {
   background-image: linear-gradient(to right, #ff7e5f, #677d97);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Centering container vertically */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100% - 100px); /* Adjusted height to leave space for header */
-  margin-top: 100px; /* Space for header */
+  height: 100%;
 }
 
+/* Styling main container */
 .main-container {
-  width: 60%; /* 60% of the viewport width */
-  height: 100%; /* Occupy full height */
+  width: 60%;
+  height: 1500px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
+/* Styling cards */
 .card {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  display: block; /* Ensure the anchor tag behaves like a block element */
-  text-decoration: none; /* Remove underline from anchor tags */
-  color: inherit; /* Inherit text color from parent */
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .card:hover {
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Example hover effect */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-content {
@@ -49,28 +53,33 @@ body {
   margin-bottom: 10px;
 }
 
+/* Styling header */
 .header {
   background-color: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
-.navbar-brand {
-  font-size: 18px; /* Customize font size if necessary */
-  margin-right: 20px; /* Add margin between the link and the h1 */
+/* Styling logo */
+.logo {
+  font-size: 18px;
+  color: #333333;
+  text-decoration: none;
+  margin-right: auto;
 }
 
-.navbar {
-  min-height: auto; /* Adjust the height as needed */
-}
-
+/* Styling header h1 */
 .header h1 {
   margin: 0;
   font-size: 24px;
   color: #333333;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Styling form */
 form .card-content {
   text-align: center;
 }
@@ -99,6 +108,7 @@ form .card-content button:hover {
   background-color: #0056b3;
 }
 
+/* Styling image placeholder */
 #choose-image .image-placeholder {
   border: 2px dashed #ccc;
   border-radius: 5px;
@@ -109,4 +119,140 @@ form .card-content button:hover {
 
 #choose-image .image-placeholder span {
   color: #777;
+}
+
+/* Additional Styling */
+html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.register-container {
+  width: 350px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.register-text {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thin-line {
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.text-center a {
+  color: #666;
+  text-decoration: none;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown button */
+.dropbtn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Position the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Center dropdown button */
+.dropdown {
+  text-align: center;
+}
+
+/* Adjusted CSS for card activation */
+.subscription-card:active {
+  background-color: #333;
+  color: white;
+}
+
+/* Darken selected item */
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #333;
+  color: white;
+}
+
+/* Additional Styling */
+.subscription-card:hover,
+.subscription-card:focus {
+  background-color: #333;
+  color: white;
+}
+
+/* Adjusted CSS for card activation */
+.subscription-card:active {
+  background-color: #333;
+  color: white;
 }/*# sourceMappingURL=register-user.css.map */

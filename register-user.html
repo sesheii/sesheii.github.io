@@ -8,42 +8,56 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="main.html">Main Page</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Register a User</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="header">
+        <a href="main.html" class="logo">Main Page</a>
+        <h1>User List</h1>
+    </div>
     <div class="container">
         <div class="main-container">
-            <form class="card" action="">
-                <div class="card-content">
-                    <h2 class="card-title">Register New User</h2>
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <button type="submit">Register</button>
-                </div>
-            </form>
-            <div class="card" id="choose-image">
-                <div class="card-content">
-                    <h2 class="card-title">Choose an Image</h2>
-                    <div class="image-placeholder">
-                        <span>Click here to select an image</span>
+            <div class="register-container">
+                <h1 class="register-text">Register</h1>
+                <div class="thin-line"></div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div>
+                        <h2 class="text-center mt-4">Choose a Subscription</h2>
+                        <div class="row mt-4">
+                          <div class="col-md-4 mb-4">
+                            <div class="card subscription-card">
+                              <div class="card-body">
+                                <h5 class="card-title">Basic</h5>
+                                <p class="card-text">Price: $9.99/month</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-4">
+                            <div class="card subscription-card">
+                              <div class="card-body">
+                                <h5 class="card-title">Standard</h5>
+                                <p class="card-text">Price: $19.99/month</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-4">
+                            <div class="card subscription-card">
+                              <div class="card-body">
+                                <h5 class="card-title">Premium</h5>
+                                <p class="card-text">Price: $29.99/month</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form>               
             </div>
+            
         </div>
     </div>
 </body>
