@@ -13,14 +13,26 @@ body {
 .header {
   background-color: #fff;
   padding: 20px;
-  text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Added */
+}
+
+.logo {
+  font-size: 18px;
+  color: #333333;
+  text-decoration: none;
 }
 
 .header h1 {
   margin: 0;
   font-size: 24px;
   color: #333333;
+  position: absolute; /* Added */
+  left: 50%; /* Adjust the position */
+  transform: translateX(-50%); /* Center the text horizontally */
 }
 
 .container {
@@ -31,6 +43,8 @@ body {
 }
 
 .main-container {
+  padding: 20px;
+  margin-top: 50px;
   width: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -72,4 +86,37 @@ body {
   .card {
     width: calc(100% - 20px);
   }
+}
+.search-container {
+  background-color: #dcdcdc;
+  width: 90%;
+  height: 70px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  margin: 20px auto; /* Center vertically */
+}
+
+.search-bar {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width: 600px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
 }/*# sourceMappingURL=user-list.css.map */
